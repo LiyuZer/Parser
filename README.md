@@ -9,7 +9,7 @@ Currently in the debugging case, so if you notice any bugs, please let me know!
 - **Modular Design**: Easy to tweak and extend.
 - **Efficient**: Uses a stack-based approach for smooth parsing.
 - **Dynamic Rule Handling**: Define and apply rules on the fly.
-- **AST Generation**: Outputs a clean Abstract Syntax Tree (AST).
+- **Parse Tree Generation**: Outputs a clean Parse tree.
 
 ## How It Works
 
