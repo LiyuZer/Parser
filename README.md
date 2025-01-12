@@ -1,111 +1,57 @@
-My Chill Parser
+# My Chill Parser
 
-Welcome to my parser! This isn't just any parser – it's built with love, thoughtfulness, and a pinch of chaos. Whether you're here to see how it works, borrow some ideas, or just judge my code (go easy on me), you're in the right place.
+A lightweight, extensible, and handcrafted parser designed for flexibility and fun. Built as part of a larger project, I wanted to show this first!
+Currently in the debugging case, so if you notice any bugs, please let me know! 
 
-Why Did I Build This?
+## Features
 
-Because I could. Seriously, though, I was building Automa, my graph-based programming language, and the parser became a key piece of the puzzle. I wanted something lightweight, highly extensible, and built from scratch. ANTLR? Too heavy. Generic libraries? Too limiting. So, I rolled up my sleeves and said, "Let's do this my way."
+- **Extensible Grammar**: Add new rules and tokens dynamically.
+- **Modular Design**: Easy to tweak and extend.
+- **Efficient**: Uses a stack-based approach for smooth parsing.
+- **Dynamic Rule Handling**: Define and apply rules on the fly.
+- **AST Generation**: Outputs a clean Abstract Syntax Tree (AST).
 
-Key Features
+## How It Works
 
-Extensibility: New grammar rules? Custom tokens? Dynamic rule creation? Done. Add what you need and keep moving.
+1. **Lexer**: Tokenizes your input.
+2. **Parser**: Matches tokens against defined rules using a stack.
+3. **Dynamic Rules**: Handles subexpressions and new grammar rules.
+4. **Output**: Produces a Parse tree that you can take and make into an AST tree.
 
-Efficiency: Parsing doesn't have to be slow or convoluted. My parser gets the job done without making your CPU cry.
+If you want to make any changes, check out the grammar folder and lexer folder; there, you can define custom grammars and tokens!
+## Quick Start
 
-Modularity: It's built to be clean and hackable. Tweak one piece without worrying about breaking the rest.
+### Clone and Build
 
-Stack-based Parsing: No magic. Just a simple std::stack approach that’s easy to follow and extend.
-
-Dynamic Rule Handling: Parentheses? Import statements? Arithmetic? You can dynamically define rules and tokens as you need them. Pure plug-and-play vibes.
-
-How It Works
-
-At its core, the parser uses an execution stack to process rules. Here's the general flow:
-
-Tokens: The lexer splits your input into tokens. These tokens feed into the parser.
-
-Rules: The parser checks the current token against your defined rules. If it matches, it’s pushed to the stack.
-
-Dynamic Expansion: Need a new rule for a subexpression? No problem. The parser dynamically creates and applies rules on the fly.
-
-Final AST: Once everything is parsed, you get a clean, hierarchical Abstract Syntax Tree (AST) to work with.
-
-Usage
-
-Want to try it out? Here’s a quick guide to get you started:
-
-Clone the Repo
-
-git clone https://github.com/your-username/your-parser.git
-cd your-parser
-
-Build
-
-Make sure you have a modern C++ compiler (I'm looking at you, g++ and clang++) installed.
-
-mkdir build && cd build
-cmake ..
+```bash
+git clone <repo>
+cd Parser
 make
+```
 
-Run
+### Run
 
-Pass in a sample input file to see the parser in action:
+```bash
+./parser++ file_name -i <file for parse graph>
+```
 
-./parser input.txt
+### Customize Rules
 
-Customize
+Edit the `rules` map in the source code to add or modify grammar rules.
+Check out the 
 
-Want to add new rules or tokens? Just edit the rules map in the source code. It’s that simple.
+## Why This Parser?
 
-What I’m Proud Of
+- Built entirely from scratch.
+- Highly adaptable for custom DSLs or scripting languages, and in the future, hopefully all languages(even context-sensitive ones)
+- The format is easy to work with for beginners 
 
-Handcrafted: Every line is my own, from the lexer to the stack-based parsing logic. No shortcuts.
+## Contact
 
-Ambiguity Tolerance: The parser handles ambiguous grammars gracefully. It’s built for flexibility.
+- **Email**: liyulg0@gmail.com
 
-Dynamic Everything: Adding new features is a breeze. You’re never locked into predefined behavior.
+Let’s make parsing simple and fun!
 
-What You Might Find Cool (or Annoying)
-
-The grammar is intentionally ambiguous, so it’s great for experimentation but might feel a bit wild.
-
-Error handling is… a work in progress. But hey, the logs are detailed, so debugging isn’t too painful.
-
-Where I’m Taking This
-
-This parser is a critical part of Automa, my graph-based programming language. But it’s also a standalone project that can handle:
-
-Custom DSLs
-
-Scripting languages
-
-Anything else you want to throw at it
-
-Contributing
-
-Want to improve it? Found a bug? Send in a PR or drop an issue. I’m open to collaborations and feedback.
-
-Why This Parser Matters (for Jobs, wink)
-
-If you're reading this, chances are you care about clean, extensible code and innovative solutions. I built this parser not just as a tool but as a showcase of my abilities. It's proof that I can:
-
-Build complex systems from scratch
-
-Solve tough problems with creative solutions
-
-Write clean, modular, and maintainable code
-
-Final Thoughts
-
-Check it out, play with it, and let me know what you think. Whether it’s for a job, collaboration, or just fun, this parser is my way of showing that code can be functional, beautiful, and a little bit quirky – just like its creator.
-
-Enjoy!
-
-Contact:
-
-GitHub: your-username
-
-Email: your.email@example.com
-
-Let’s make parsing cool again. :sunglasses:
+This is an image of a parser tree(from one of the files in this repo) 
+![Alt text](assets/image.jpeg)
 
