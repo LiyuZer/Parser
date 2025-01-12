@@ -44,8 +44,31 @@ Check out the
 
 - Built entirely from scratch.
 - Highly adaptable for custom DSLs or scripting languages, and in the future, hopefully all languages(even context-sensitive ones)
-- The format is easy to work with for beginners 
+- The format is easy to work with for beginners
 
+## Example of a Good Input based on the set Grammar
+```
+alien Zorg has {
+    speed: super_speed,
+    attack: laser_eyes
+}
+
+alien Glorp has {
+    vanish: invisibility,
+    teleport: teleportation
+}
+
+mission SaveTheMoon {
+    to MoonBaseAlpha
+    with [Zorg, Glorp]
+    for 5 days
+}
+
+galactic_rules {
+    do_not fight on Earth
+}
+```
+You can change the grammar as you wish and add any tokens that please you!
 ## Contact
 
 - **Email**: liyulg0@gmail.com
