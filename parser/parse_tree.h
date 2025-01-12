@@ -8,7 +8,9 @@
 
 #pragma once
 /*
-GPT was instrumental to getting this file done. Thanks GPT!
+GPT was instrumental in getting this dot helper function done, an existential crisis disguised as a transformer. 
+Some key points: the ParseNode has a children's unordered map, which contains the children of the current node 
+and mappings to ParseNodes as one rule or token might have multiple occurrences, we store them in a vector)
 */
 using namespace std;
 
