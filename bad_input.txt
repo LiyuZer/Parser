@@ -1,0 +1,13 @@
+alien Zorg has {
+    speed: super_speed,
+    attack: laser_eyes
+}
+
+alien Glorp has {
+    vanish: invisibility,
+    teleport: teleportation
+}
+
+galactic_rules {
+    do_not fight on Earth
+}

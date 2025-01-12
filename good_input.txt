@@ -1,0 +1,19 @@
+alien Zorg has {
+    speed: super_speed,
+    attack: laser_eyes
+}
+
+alien Glorp has {
+    vanish: invisibility,
+    teleport: teleportation
+}
+
+mission SaveTheMoon {
+    to MoonBaseAlpha
+    with [Zorg, Glorp]
+    for 5 days
+}
+
+galactic_rules {
+    do_not fight on Earth
+}
