@@ -24,7 +24,7 @@ If you want to make any changes, check out the grammar folder and lexer folder; 
 ### Clone and Build
 
 ```bash
-git clone <repo>
+git clone [<repo>](https://github.com/LiyuZer/Parser.git)
 cd Parser
 make
 ```
