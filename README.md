@@ -53,5 +53,5 @@ Check out the
 Let’s make parsing simple and fun!
 
 This is an image of a parser tree(from one of the files in this repo) 
-![Alt text](assets/image.jpeg)
+![Parse Tree!](assets/image.png)
 
