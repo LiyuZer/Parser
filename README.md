@@ -16,7 +16,7 @@ Currently in the debugging case, so if you notice any bugs, please let me know!
 1. **Lexer**: Tokenizes your input.
 2. **Parser**: Matches tokens against defined rules using a stack.
 3. **Dynamic Rules**: Handles subexpressions and new grammar rules.
-4. **Output**: Produces a Parse tree that you can take and make into an AST tree.
+4. **Output**: Produces a Parse tree that you can take and make into an AST.
 
 If you want to make any changes, check out the grammar folder and lexer folder; there, you can define custom grammars and tokens!
 ## Quick Start
