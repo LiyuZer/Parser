@@ -1,4 +1,4 @@
-# My Chill Parser
+#Parser
 
 A lightweight, extensible, and handcrafted parser designed for flexibility and fun. Built as part of a larger project, I wanted to show this first!
 Currently in the debugging case, so if you notice any bugs, please let me know! 
